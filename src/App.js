@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Component from './profile/Component';
 
 function App() {
+  const styleObject = {color:"red",textAlign:'center'}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style ={styleObject}>
+     <Component name="nada"  />
+     <Component  bio="Mejdi"  />
+     <Component  prof="dev" />
+     <Component><img src="/imagee.jpg" alt="iamgee"></img></Component>
+     
     </div>
+    
   );
 }
+
 
 export default App;
